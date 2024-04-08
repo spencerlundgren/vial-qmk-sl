@@ -18,7 +18,7 @@
 #include "quantum.h"
 
 // clang-format off
-#ifdef RGB_MATRIX_ENABLE
+// #ifdef RGB_MATRIX_ENABLE
 led_config_t g_led_config = { {
     // left
     {  0,  7,  8, 15, 16, 20 },
@@ -59,5 +59,5 @@ led_config_t g_led_config = { {
     4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
     2, 2, 2, 2, 2
 } };
-#endif
+// #endif
 // clang-format on

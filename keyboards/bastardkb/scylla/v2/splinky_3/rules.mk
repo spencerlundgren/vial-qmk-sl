@@ -19,3 +19,7 @@ RGB_MATRIX_ENABLE = yes     # Enable keyboard RGB matrix functionality
 SPLIT_KEYBOARD = yes
 
 SERIAL_DRIVER = vendor
+
+CAPS_WORD_ENABLE = yes
+REPEAT_KEY_ENABLE = yes
+COMBO_ENABLE = yes
