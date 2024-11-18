@@ -18,37 +18,39 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 
-#ifdef OLED_ENABLE
+// #ifdef OLED_ENABLE
 
-    const uint16_t PROGMEM left_command[] = {KC_F, KC_D, COMBO_END};
-    const uint16_t PROGMEM left_control[] = {KC_F, KC_S, COMBO_END};
-    const uint16_t PROGMEM left_alt[] = {KC_A, KC_D, COMBO_END};
-    const uint16_t PROGMEM left_command_control[] = {KC_S, KC_D, KC_F, COMBO_END};
-    const uint16_t PROGMEM left_alt_shift[] = {KC_A, KC_S, KC_D, COMBO_END};
-    const uint16_t PROGMEM right_command[] = {KC_J, KC_K, COMBO_END};
-    const uint16_t PROGMEM right_control[] = {KC_J, KC_L, COMBO_END};
-    const uint16_t PROGMEM right_alt[] = {KC_K, KC_SCLN, COMBO_END};
-    const uint16_t PROGMEM right_command_control[] = {KC_J, KC_K, KC_L, COMBO_END};
-    const uint16_t PROGMEM right_alt_shift[] = {KC_K, KC_L, KC_SCLN, COMBO_END};
-    const uint16_t PROGMEM escape_combo[] = {KC_D, KC_S, COMBO_END};
-    const uint16_t PROGMEM tab_combo[] = {KC_L, KC_K, COMBO_END};
+    // const uint16_t PROGMEM left_command[] = {KC_F, KC_D, COMBO_END};
+    // const uint16_t PROGMEM left_control[] = {KC_F, KC_S, COMBO_END};
+    // const uint16_t PROGMEM left_alt[] = {KC_A, KC_D, COMBO_END};
+    // const uint16_t PROGMEM left_command_control[] = {KC_S, KC_D, KC_F, COMBO_END};
+    // const uint16_t PROGMEM left_alt_shift[] = {KC_A, KC_S, KC_D, COMBO_END};
+    // const uint16_t PROGMEM right_command[] = {KC_J, KC_K, COMBO_END};
+    // const uint16_t PROGMEM right_control[] = {KC_J, KC_L, COMBO_END};
+    // const uint16_t PROGMEM right_alt[] = {KC_K, KC_SCLN, COMBO_END};
+    // const uint16_t PROGMEM right_command_control[] = {KC_J, KC_K, KC_L, COMBO_END};
+    // const uint16_t PROGMEM right_alt_shift[] = {KC_K, KC_L, KC_SCLN, COMBO_END};
+    // const uint16_t PROGMEM escape_combo[] = {KC_D, KC_S, COMBO_END};
+    // const uint16_t PROGMEM tab_combo[] = {KC_L, KC_K, COMBO_END};
+    // const uint16_t PROGMEM cmd_n[] = {KC_N, KC_ENT, COMBO_END};
+    //
+    // combo_t key_combos[] = {
+    //     COMBO(left_command, KC_LGUI),
+    //     COMBO(left_control, KC_LCTL),
+    //     COMBO(left_alt, KC_LALT),
+    //     COMBO(left_command_control, LGUI(KC_LCTL)),
+    //     COMBO(right_command, KC_RGUI),
+    //     COMBO(right_control, KC_RCTL),
+    //     COMBO(right_alt, KC_RALT),
+    //     COMBO(right_command_control, RGUI(KC_RCTL)),
+    //     COMBO(right_alt_shift, RALT(KC_RSFT)),
+    //     COMBO(left_alt_shift, LALT(KC_LSFT)),
+    //     COMBO(escape_combo, KC_ESC),
+    //     COMBO(tab_combo, KC_TAB),
+    //     COMBO(cmd_n, RGUI(KC_N)),
+    // };
 
-    combo_t key_combos[] = {
-        COMBO(left_command, KC_LGUI),
-        COMBO(left_control, KC_LCTL),
-        COMBO(left_alt, KC_LALT),
-        COMBO(left_command_control, LGUI(KC_LCTL)),
-        COMBO(right_command, KC_RGUI),
-        COMBO(right_control, KC_RCTL),
-        COMBO(right_alt, KC_RALT),
-        COMBO(right_command_control, RGUI(KC_RCTL)),
-        COMBO(right_alt_shift, RALT(KC_RSFT)),
-        COMBO(left_alt_shift, LALT(KC_LSFT)),
-        COMBO(escape_combo, KC_ESC),
-        COMBO(tab_combo, KC_TAB),
-    };
-
-#endif // OLED_ENABLE
+// #endif // OLED_ENABLE
 //
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_split_3x6_3(
